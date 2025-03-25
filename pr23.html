@@ -1,0 +1,137 @@
+<!--practical 23 worh on RWDtemplates in html-->
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+box-sizing: border-box;
+}
+.row::after {
+content: "";
+clear: both;
+display: table;
+}
+[class*="col-"] {
+float: left;
+padding: 15px;
+}
+html {
+font-family: "Lucida Sans", sans-serif;
+}
+.header {
+background-color: #9933cc;
+
+color: #ffffff;
+padding: 15px;
+}
+.menu ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+.menu li {
+padding: 8px;
+margin-bottom: 7px;
+background-color: #33b5e5;
+color: #ffffff;
+box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li:hover {
+background-color: #0099cc;
+}
+.aside {
+background-color: #33b5e5;
+padding: 15px;
+color: #ffffff;
+text-align: center;
+font-size: 14px;
+box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.footer {
+background-color: #0099cc;
+color: #ffffff;
+text-align: center;
+font-size: 12px;
+padding: 15px;
+}
+/* For mobile phones: */
+[class*="col-"] {
+width: 100%;
+}
+
+
+@media only screen and (min-width: 600px) {
+
+/* For tablets: */
+.col-s-1 {width: 8.33%;}
+.col-s-2 {width: 16.66%;}
+.col-s-3 {width: 25%;}
+.col-s-4 {width: 33.33%;}
+.col-s-5 {width: 41.66%;}
+.col-s-6 {width: 50%;}
+.col-s-7 {width: 58.33%;}
+.col-s-8 {width: 66.66%;}
+.col-s-9 {width: 75%;}
+.col-s-10 {width: 83.33%;}.col-s-11 {width: 91.66%;}
+.col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}
+</style>
+</head>
+<body>
+<div class="header">
+<h1 align="center" text="red">S.E.S POLYTECHNIC SOLAPUR</h1>
+</div>
+<div class="row">
+<div class="col-3 col-s-3 menu">
+
+<ul>
+<li><h1>DEPARTMENTS</h1></li>
+<li>Computer engineer</li>
+<li>ENTC engineer </li>
+<li>Mechnical engineer</li>
+<li>electronic engineer</li>
+</ul>
+</div>
+<div class="col-6 col-s-9">
+<h1>DEPARTMENTS</h1>
+<h1>computer engineer</h1>
+<p>Computer engineering is a field that combines electrical engineering and computer science to develop new technology. Computer engineers design, build, and maintain hardware in modern computers, and focus on integrating hardware and software in a unified system safely and efficiently. They specialize in the design, development, and maintenance of computer systems and networks. Computer engineering involves designing how a computer system works and how it interacts with all its relevant subsystems. Computer engineering majors use computer science, engineering and mathematics to assess problems and design solutions for digital systems.</p>
+<h1>ENTC engineer</h1>
+<P>Electronics and telecommunications engineering is a modern engineering discipline that deals with designing, fabricating, producing, testing and supervising the manufacturing process of complex electronic products and systems.</P>
+<h1>MECHANICAL engineer</h1>
+<P>Mechanical engineering is the study of physical machines that may involve force and movement. It is an engineering branch that combines engineering physics and mathematics principles with materials science, to design, analyze, manufacture, and maintain mechanical systems.[1] It is one of the oldest and broadest of the engineering branches.</P>
+<h1>ELECTRONIC engineer</h1>
+<P>Electronic engineering is a sub-discipline of electrical engineering that emerged in the late-19th century. It is focused on the development of products and systems using electronic technology. An electronics engineer specializes in the design, development, testing, and maintenance of electronic systems, circuits, and components. These engineers apply principles from electrical engineering to create technologies that involve the manipulation of electrical signals for various applications.</P>
+</div>
+<div class="col-3 col-s-12">
+<div class="aside">
+<h2>What?</h2>
+<p>Chania is a city on the island of Crete.</p>
+<h2>Where?</h2>
+<p>Crete is a Greek island in the Mediterranean Sea.</p>
+<h2>How?</h2>
+<p>You can reach Chania airport from all over Europe.</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<p></p>
+</div>
+</body>
+</html>
